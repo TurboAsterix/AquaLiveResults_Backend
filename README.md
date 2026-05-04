@@ -11,28 +11,27 @@ Die Ergebnisse werden auf einer Webseite dargestellt, sodass Athleten, Publikum 
 # Backend
 Bei diesem Repository handelt es sich um die Backend-Komponente, die auf einem Aquarius Rechner im LAN installiert und ausgeführt wird. 
 
-Systemvorbereitung:
+## Systemvorbereitung
 - Powershell installieren, siehe https://github.com/PowerShell/PowerShell/releases
 - Datei PowerShell-7.x.x-win-x64.msi für Windows 10/11 Systeme
 - PuTTY installieren, siehe https://putty.org
 - PuTTY wird benötigt für pscp.exe für den SFTP Transfer
 
-Installation:
+## Installation
 - Repository in einen Ordner klonen
 
-Konfiguration: 
-
+## Konfiguration 
 Die Datei ./interface.ini anpassen mit:
 - dem Pfad zur Aquarius.ini im Windows Benutzerprofil
 - dem Aquarius Datenbank Passwort des DB Benutzers "Rudern"
 - SFTP Server, Benutzername, Passwort und Remote Pfad
 
-Veranstaltung auswählen:
+## Veranstaltung auswählen
 - Für den DB Select benötigen wir die interne Event ID. Hierzu Aquarius öffnen, die Veranstaltung auswählen/öffnen und -wichtig- Aquarius wieder schließen.
 - Aquarius schreibt die Event ID leider erst beim Schließen des Programms in die Aquarius.ini
 - Anschließend kann Aquarius auf dem Rechner wieder geöffnet/verwendet werden.
 
-Ausführung im Powershell Terminal:
+## Ausführung im Powershell Terminal
 - ./interface_start.ps1 startet die Schnittstelle; in der Standardeinstellung Ausleitung aus Aquarius und SFTP Transfer alle 3 Minuten
 - ./interface_start_reset.ps1 startet die Schnittstelle einmalig um die Daten auf dem Webserver zu löschen und durch Dummy-Daten zu ersetzen (aufräumen)
 
@@ -47,3 +46,4 @@ Siehe hier: https://github.com/TurboAsterix/AquaLiveResults_Frontend
   
 # Interface.ini
 Enthält Code von https://stackoverflow.com/a/43697842/1031534 und https://gist.github.com/beruic/1be71ae570646bca40734280ea357e3c zum Auslesen der .ini
+Lizenz wie dort angegeben.
