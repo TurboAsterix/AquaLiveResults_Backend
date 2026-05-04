@@ -27,6 +27,11 @@ Die Datei ./interface.ini anpassen mit:
 - dem Aquarius Datenbank Passwort des DB Benutzers "Rudern"
 - SFTP Server, Benutzername, Passwort und Remote Pfad
 
+Veranstaltung auswählen:
+- Für den DB Select benötigen wir die interne Event ID. Hierzu Aquarius öffnen, die Veranstaltung auswählen/öffnen und -wichtig- Aquarius wieder schließen.
+- Aquarius schreibt die Event ID leider erst beim Schließen des Programms in die Aquarius.ini
+- Anschließend kann Aquarius auf dem Rechner wieder geöffnet/verwendet werden.
+
 Ausführung im Powershell Terminal:
 - ./interface_start.ps1 startet die Schnittstelle; in der Standardeinstellung Ausleitung aus Aquarius und SFTP Transfer alle 3 Minuten
 - ./interface_start_reset.ps1 startet die Schnittstelle einmalig um die Daten auf dem Webserver zu löschen und durch Dummy-Daten zu ersetzen (aufräumen)
