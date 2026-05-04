@@ -37,7 +37,8 @@ Die Datei ./interface.ini anpassen mit:
 - ./interface_start_reset.ps1 startet die Schnittstelle einmalig um die Daten auf dem Webserver zu löschen und durch Dummy-Daten zu ersetzen (aufräumen)
 
 # Daten
-Die Backend-Komponente extrahiert die Rennergebnisse und aktualisiert (im Standard alle 3 Minuten) die Datei ./public/data/aquarius_db_output.json per SFTP.
+Die Backend-Komponente extrahiert die Rennergebnisse und aktualisiert (im Standard alle 3 Minuten) die Datei 
+./public/data/aquarius_db_output.json per SFTP.
 Siehe ./interface_start.ps1
 
 # Frontend
