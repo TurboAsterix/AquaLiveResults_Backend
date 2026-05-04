@@ -23,7 +23,7 @@ Bei diesem Repository handelt es sich um die Backend-Komponente, die auf einem A
 ## Konfiguration 
 Die Datei ./interface.ini anpassen mit:
 - dem Pfad zur Aquarius.ini im Windows Benutzerprofil
-- dem Aquarius Datenbank Passwort des DB Benutzers "Rudern"
+- dem Aquarius Datenbank Passwort des DB Benutzers "SA" der Datenbank "Rudern"
 - SFTP Server, Benutzername, Passwort und Remote Pfad
 
 ## Veranstaltung auswählen
@@ -33,6 +33,7 @@ Die Datei ./interface.ini anpassen mit:
 
 ## Ausführung im Powershell Terminal
 - ./interface_start.ps1 startet die Schnittstelle; in der Standardeinstellung Ausleitung aus Aquarius und SFTP Transfer alle 3 Minuten
+<img width="1112" height="624" alt="aqualiveresults_backend2" src="https://github.com/user-attachments/assets/3f351e03-16c0-4ebe-b3a6-651d955fadc2" />
 - ./interface_start_reset.ps1 startet die Schnittstelle einmalig um die Daten auf dem Webserver zu löschen und durch Dummy-Daten zu ersetzen (aufräumen)
 
 # Daten
@@ -47,3 +48,8 @@ Siehe hier: https://github.com/TurboAsterix/AquaLiveResults_Frontend
 # Interface.ini
 Enthält Code von https://stackoverflow.com/a/43697842/1031534 und https://gist.github.com/beruic/1be71ae570646bca40734280ea357e3c zum Auslesen der .ini
 Lizenz wie dort angegeben.
+
+# Erster Transfer
+Ggf. ist beim ersten Transfer der Server Fingerprint in PuTTY noch nicht bekannt. Dann im ersten Durchlauf die Abfrage mit Yes bestätigen (sofern man sicher den korrekten Server konfiguriert hat). 
+Die Abfrage wird nur beim ersten Transfer von diesem Client zu diesem Server anzeigt. 
+<img width="1115" height="872" alt="aqualiveresults_backend_fingerprint" src="https://github.com/user-attachments/assets/bb54e50d-4492-49d9-90d1-e712ca567d75" />
