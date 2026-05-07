@@ -4,6 +4,9 @@ AquaLiveResults: Live race results from Aquarius, backend component
 # Demo und Dokumentation
 https://www.aqualiveresults.de/
 
+# Demo in GitHub Pages
+https://turboasterix.github.io/AquaLiveResults_Frontend/public/index.html
+
 # Was ist AquaLiveResults?
 AquaLiveResults ermöglicht die (nahezu) Echtzeit-Anzeige von Regatta-Ergebnissen aus der im Rudersport weit verbreiteten Software Aquarius. 
 Die Ergebnisse werden auf einer Webseite dargestellt, sodass Athleten, Publikum und Veranstalter sie direkt nach dem Zieleinlauf abrufen können ohne auf den Aushang der Ergebnisse zu warten.
