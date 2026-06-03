@@ -2,7 +2,7 @@
 AquaLiveResults: Live race results from Aquarius, backend component
 
 # Demo und Dokumentation
-https://www.aqualiveresults.de/
+https://aqualiveresults.4lima.de
 
 # Demo in GitHub Pages
 https://turboasterix.github.io/AquaLiveResults_Frontend/public/index.html
